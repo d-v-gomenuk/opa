@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+    <head>
+       <title>Базовое задание - день/ночь</title>
+       <meta charset="utf-8">
+	   <link href="style.css" rel="stylesheet">
+	   <script type="text/javascript" src="./scripts/modernizr.min.js"></script>
+    </head>
+    <body onload="applySetting()">
+		<script type="text/javascript" src="./scripts/script.js"></script>
+        <header class="page-header">
+			<figure class="logo">
+				<img src="./images/logo_AVG.svg" width="100" height="100">
+			</figure>
+			<nav class="main-menu">
+				<ul>
+					<li><a href="#home">Главная и единственная </a></li>
+				</ul>
+			</nav> 
+        </header>
+        <main>
+			<article class="blog-entry">
+				<aside class="svg-preview">
+					<img src="./images/logo_clean.svg" width="400" height="300">
+				</aside>
+				<section class="info-content">
+					<h1>Задание 1 (базовое)</h1>
+					<p>Ведётся разработка пользовательского интерфейса, предназначенного для различных режимов(как минимум, день-ночь) отображения.</p>
+					<p>При закрытии обозревателя последний вариант отображения сохраняется и при повторном открытии пользователь получает страничку с тем внешним видом, который имел место при последнем закрытии браузера.</p>
+					<p>Ниже имеется форма для ввода интересных данных пользователя. Но т.к. там нет полей с новыми финчами из HTML5, создал возможность применить нововеденния при выборе режима отображения фона.</p>
+					<section>
+						<form onsubmit="setSettings()">
+							<label>А вот можно выбрать фон:<input id="favcolor" type="color" value="#ffffff" /></label>
+							
+							<input type="submit" value="Применить" />
+							<input onclick="clearSettings()" type="reset" value="Стереть" />
+						</form>
+					</section>
+				</section>
+				
+			</article>
+			<aside class="contact-fields">
+				<header class="contact-header">
+					<h1>Не знаю зачем, но заполнить можно</h1>
+				</header>
+					<form name="userLooser" method="get" action="">
+						<label for="name-field"> Ваше имя (как в банковской карте):</label>
+						<input type="text" name="nameUser" id="name-field">
+						<br/>
+						
+						<label for="number-card">Номер банковской карты:</label>
+						<input type="text" name="cardNumber" id="number-card">
+						<br/>
+						
+						<label for="password-card">Пароль(никто не увидит):</label>
+						<input type="password" name="passwordCard" id="password-card">
+						<br/>
+						
+						<label for="money-size">Сколько лавэ на карте?</label>
+						<input type="text" name="moneySize" id="money-size">
+						<br/>
+	
+						<label for="info-field">Дополнительная инфа:</label>
+						<textarea rows="4" cols="40" name="infoField" id="info-field"></textarea>
+						<br/>
+						
+						<input type="submit" value="Отправить!"  />
+						<input type="reset" value="Отменить">
+					</form>
+			</aside>
+			<section class="logos">
+				<header class="slides-header">
+					<h1>Со мной мечтают сотрудничать</h1>
+				</header>
+				<figure class="slides">
+					<a href="http://toplogos.ru/logo-microsoft/" target="_blank"><img src="http://toplogos.ru/images/thumbs/preview-logo-microsoft.png"  alt="Логотип Microsoft" /></a>
+					<a href="http://toplogos.ru/logo-promt/" target="_blank"><img src="http://toplogos.ru/images/thumbs/preview-logo-promt.jpg"  alt="Логотип PROMT" /></a>
+					<a href="http://toplogos.ru/logo-django/" target="_blank"><img src="http://toplogos.ru/images/thumbs/preview-logo-django.png"  alt="Логотип Django" /></a>
+					<a href="http://toplogos.ru/logo-php/" target="_blank"><img src="http://toplogos.ru/images/thumbs/preview-logo-php.jpg"  alt="Логотип PHP" /></a>
+					<a href="http://toplogos.ru/logo-node-js/" target="_blank"><img src="http://toplogos.ru/images/thumbs/preview-logo-node-js.png"  alt="Логотип Node.js" /></a>
+				</figure>
+			</section>
+        </main>
+        <footer class="page-footer">
+			<section class="info">
+				<img src="./images/logo_gnu_100.png" width="100" alt="author">
+				<b>Гоменюк Денис,</b> гр. 124-24
+			</section>
+			<aside class="copyright">© Никаких прав нет</aside>
+        </footer>
+    </body>
+</html>
